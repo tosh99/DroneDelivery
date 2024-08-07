@@ -1,0 +1,35 @@
+.galleryM {
+}
+
+.gallery {
+    header {
+        color: var(--Accent);
+    }
+
+    .titleDesc {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .qualities {
+        margin-bottom: 60px;
+        width: 100%;
+        justify-content: space-between;
+
+        .quality {
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+            gap: 20px;
+            border-radius: 20px;
+
+            video {
+                width: 100%;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .del {
+        font-weight: 500;
+    }
+
+}

@@ -14,8 +14,8 @@
 
     //Button
     --BtnPadding: 0 16px;
-    --BtnBorderRadius: 20px;
-    --BtnFontSize: 12px;
+    --BtnBorderRadius: 30px;
+    --BtnFontSize: 14px;
     --BtnActiveBgColor: black;
     --BtnActiveHoverBgColor: gray;
     --BtnActiveFontColor: white;
@@ -28,18 +28,27 @@
     --BtnSimpleHoverBgColor: #aaaaaa;
     --BtnSimpleFontColor: black;
     --BtnSimpleBorder: 1px solid transparent;
-    --BtnFontFamily: 'Work Sans Variable';
+    --BtnFontFamily: 'Inter Tight Variable';
 
     //Input
     --GInputPadding: 0 8px;
-    --GInputHeight: 34px;
+    --GInputHeight: 50px;
     --GInputBorder: 1px solid #eaeaea;
     --GInputBorderRadius: 6px;
     --GInputPlaceHolderColor: 6px;
     --GInputActiveColor: 6px;
     --GInputFocusColor: 6px;
     --GInputDisabledColor: 6px;
-    --GInputFontFamily: 'Work Sans Variable';
+    --GInputFontFamily: 'Inter Tight Variable';
+
+    --Accent: rgba(60, 28, 145, 0.9);
+}
+
+@media only screen and (max-width: 768px) {
+    :root {
+        --PageHPadding: 20px;
+        --PageVPadding: 20px;
+    }
 }
 
 * {

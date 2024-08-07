@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/theme.scss';
 import '@fontsource-variable/work-sans';
+import '@fontsource/pt-sans-narrow';
+import '@fontsource-variable/inter-tight';
+
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 

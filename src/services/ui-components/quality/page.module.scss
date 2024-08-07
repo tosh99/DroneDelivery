@@ -1,0 +1,86 @@
+.qaBanner {
+
+}
+
+.qa {
+    justify-content: center;
+
+    header {
+        color: var(--Accent);
+    }
+
+    .titleDesc {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .qualities {
+        margin-bottom: 60px;
+
+        .quality {
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+            padding: 70px 20px;
+            max-width: 350px;
+            gap: 20px;
+            background: linear-gradient(to bottom, #ffffff, #ffffff) padding-box, linear-gradient(to bottom, var(--Accent), #ffffff) border-box;
+            border-radius: 40px;
+            border: 4px solid transparent;
+
+            svg {
+                font-size: 70px;
+                margin-bottom: 20px;
+                color: var(--Accent);
+            }
+
+            h5, p {
+                text-align: center;
+            }
+
+            h5 {
+                font-weight: 500;
+            }
+
+            .desc {
+                margin-bottom: 20px;
+            }
+
+            .readMore {
+                color: var(--Accent);
+                cursor: pointer;
+            }
+        }
+    }
+
+    .del {
+        font-weight: 500;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .qa {
+        margin-top: 50px;
+
+        .titleDesc {
+            margin-bottom: 20px;
+        }
+
+        .qualities {
+            margin-bottom: 20px;
+            flex-wrap: wrap !important;
+
+            .quality {
+                padding: 20px 20px;
+                max-width: 100%;
+
+                svg {
+                    font-size: 70px;
+                    margin-bottom: 20px;
+                }
+
+                .desc {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

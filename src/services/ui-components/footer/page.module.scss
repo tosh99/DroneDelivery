@@ -1,0 +1,22 @@
+.footer {
+    gap: 10px;
+
+    .footerC {
+        width: calc(33% - 10px);
+    }
+
+    .localTime {
+        width: 400px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .footerC {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .localTime {
+            width: 100%;
+        }
+    }
+}

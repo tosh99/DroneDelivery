@@ -1,0 +1,37 @@
+.hero {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%), url(/public/banner-1.jpg);
+    background-size: cover;
+    color: #e1e1e1;
+
+    .heroBanner {
+        height: 100%;
+
+        h1{
+            text-align: center;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .heroBanner {
+            gap: 50px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+    }
+
+    .socialMedia {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid gray;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .socialMedia:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+    }
+}
