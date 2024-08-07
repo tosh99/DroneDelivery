@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px var(--PageHPadding);
+    position: absolute;
+    top: 0;
+    background: transparent;
+    z-index: 1;
+
+    .headerInner {
+        .nav {
+            background: white;
+            border-radius: 20px;
+            padding: 8px 32px;
+
+            p {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .actionIcon {
+        border-radius: 50%;
+        border: 1px solid gray;
+        cursor: pointer;
+    }
+}
