@@ -1,21 +1,41 @@
+.aboutP {
+    background: white;
+}
+
 .about {
+    position: relative;
+    z-index: 1;
+
     h2 {
         text-align: center;
         margin-bottom: 20px;
+        background-image: linear-gradient(to bottom left, var(--Accent) 45%, black 100%);
+        color: transparent;
+        background-clip: text;
+        font-weight: 600;
     }
 
     .locations {
         .location {
             width: 33%;
+
+            h6 {
+                font-weight: 700;
+            }
         }
     }
 
     header {
-        color: var(--Accent);
+        color: #400868;
+        font-weight: 500;
     }
 }
 
 @media only screen and (max-width: 768px) {
+    .aboutP {
+        height: auto !important;
+    }
+
     .about {
         .locations {
             flex-direction: column !important;

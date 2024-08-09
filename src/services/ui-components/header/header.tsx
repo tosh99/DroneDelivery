@@ -5,7 +5,7 @@ export const Header = () => {
     return (
         <SFlex width={'100%'} justify={'center'} className={styles.header}>
             <SFlex width={'100%'} justify={'space-between'} align={'center'} className={styles.headerInner}>
-                <div className="logo">Drone Disks</div>
+                <div className={styles.logo}>Drone Disks</div>
                 <SFlex align={'center'} gap={20} className={styles.nav}>
                     <p>Home</p>
                     <p>Delivery</p>

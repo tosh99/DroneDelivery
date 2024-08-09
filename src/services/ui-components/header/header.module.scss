@@ -10,6 +10,11 @@
     .headerInner {
         max-width: var(--PageSectionMinInnerWidth);
 
+        .logo {
+            font-size: 20px;
+            color: white;
+        }
+
         .nav {
             background: white;
             border-radius: 20px;

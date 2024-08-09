@@ -1,9 +1,32 @@
 .qaBanner {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.4) 100%);
 
+    .heroVideo {
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: -2;
+        left: 0;
+        top: 0;
+    }
 }
 
 .qa {
     justify-content: center;
+    position: relative;
+
+    .qaVideo {
+        width: 40%;
+
+        video {
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+
+    .qaContent {
+        width: 60%;
+    }
 
     header {
         color: var(--Accent);
@@ -11,37 +34,46 @@
 
     .titleDesc {
         margin-bottom: 50px;
-        text-align: center;
+        //text-align: center;
+        background-image: linear-gradient(to bottom left, var(--Accent) 45%, black 100%);
+        color: transparent;
+        background-clip: text;
+        font-weight: 600;
     }
 
     .qualities {
         margin-bottom: 60px;
+        width: 100%;
 
         .quality {
             box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
-            padding: 70px 20px;
-            max-width: 350px;
+            padding: 10px 20px;
+            //max-width: 350px;
+            width: 100%;
             gap: 20px;
-            background: linear-gradient(to bottom, #ffffff, #ffffff) padding-box, linear-gradient(to bottom, var(--Accent), #ffffff) border-box;
-            border-radius: 40px;
+            //background: linear-gradient(to bottom, #ffffff, #ffffff) padding-box, linear-gradient(to bottom, var(--Accent), #ffffff) border-box;
+            border-radius: 10px;
             border: 4px solid transparent;
+            background: white;
 
             svg {
-                font-size: 70px;
-                margin-bottom: 20px;
+                font-size: 30px;
+                //margin-bottom: 20px;
                 color: var(--Accent);
             }
 
             h5, p {
-                text-align: center;
+                //text-align: center;
             }
 
             h5 {
                 font-weight: 500;
+                color: #260a49;
             }
 
             .desc {
-                margin-bottom: 20px;
+                //margin-bottom: 20px;
+                color: #7a7783;
             }
 
             .readMore {
@@ -53,12 +85,39 @@
 
     .del {
         font-weight: 500;
+        font-size: 32px;
+        color: #210137;
     }
+
+    .storeIcons {
+        justify-content: start;
+
+        .storeImg {
+            width: 200px;
+            cursor: pointer;
+        }
+    }
+
+
 }
 
 @media only screen and (max-width: 768px) {
     .qa {
         margin-top: 50px;
+        flex-direction: column !important;
+
+        .qaVideo {
+            width: 100%;
+
+            video {
+                width: 100%;
+                border-radius: 20px;
+            }
+        }
+
+        .qaContent {
+            width: 100%;
+        }
 
         .titleDesc {
             margin-bottom: 20px;
@@ -80,6 +139,14 @@
                 .desc {
                     margin-bottom: 20px;
                 }
+            }
+        }
+
+        .storeIcons {
+            justify-content: center;
+
+            .storeImg {
+                width: 50%;
             }
         }
     }

@@ -1,0 +1,62 @@
+.demoBg {
+    background: black;
+}
+
+.demo {
+    position: relative;
+    z-index: 1;
+    color: white;
+    gap: 40px !important;
+    height: 100%;
+    align-items: center !important;
+
+    .demoContent {
+        width: 50%;
+
+        h3 {
+            margin-bottom: 30px;
+        }
+
+        .demoFeatures {
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .clientItem {
+            width: 80px;
+            height: 40px;
+            margin: 0 20px;
+            background-size: contain !important;
+        }
+    }
+
+
+    .demoForm {
+        width: 50%;
+        background: white;
+        padding: 40px;
+        color: black;
+        border-radius: 10px;
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .demo {
+        gap: 40px !important;
+        height: 100%;
+        justify-content: center !important;
+        flex-direction: column !important;
+
+        .demoContent {
+            width: 100%;
+        }
+
+
+        .demoForm {
+            width: 100%;
+            padding: 20px;
+
+        }
+    }
+}

@@ -1,7 +1,5 @@
-import { SFlex, SPageSection } from 'react-simple-ui-lib';
+import { SFlex, SImage, SPageSection } from 'react-simple-ui-lib';
 import styles from './page.module.scss';
-import { FaAward } from 'react-icons/fa6';
-import { FaShieldAlt } from 'react-icons/fa';
 
 const videos = [
     {
@@ -17,10 +15,15 @@ const videos = [
 
 export default function Gallery() {
     return (
-        <SPageSection className={styles.galleryM} height={'auto'}>
+        <SPageSection className={styles.galleryM} height={'auto'} disableAnimation>
             <SFlex align={'center'} direction={'column'} height={'100%'} className={styles.gallery}>
-                <header>See for Yourself</header>
                 <h3 className={styles.titleDesc}>Optimized E2E Delivery Mechanism</h3>
+
+                {/*<div className={styles.heroVideo}>*/}
+                {/*    <video autoPlay muted loop>*/}
+                {/*        <source src="/7.mp4" type="video/mp4" />*/}
+                {/*    </video>*/}
+                {/*</div>*/}
 
                 <SFlex align={'center'} gap={20} className={styles.qualities}>
                     {videos.map((quality, index) => (
@@ -30,6 +33,11 @@ export default function Gallery() {
                             </video>
                         </SFlex>
                     ))}
+                </SFlex>
+
+                <SFlex width={'100%'} className={styles.storeIcons}>
+                    <SImage src={'/play-store.svg'} height={100} backgroundSize={'contain'} className={styles.storeImg} />
+                    <SImage src={'/app-store.svg'} height={100} backgroundSize={'contain'} className={styles.storeImg} />
                 </SFlex>
             </SFlex>
         </SPageSection>

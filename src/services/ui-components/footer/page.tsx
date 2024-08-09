@@ -12,7 +12,7 @@ export default function Footer() {
     }, []);
 
     return (
-        <SPageSection height="auto">
+        <SPageSection height="auto" className={styles.footerP} disableAnimation>
             <SFlex wrap className={styles.footer}>
                 <SFlex direction={'column'} className={styles.footerC}>
                     <h5>Mumbai, India</h5>

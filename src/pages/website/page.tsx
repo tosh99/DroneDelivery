@@ -1,8 +1,7 @@
-import { SFlex } from 'react-simple-ui-lib';
 import Hero from 'components/hero/page.tsx';
 import { Header } from 'components/header/header.tsx';
 import Quality from 'components/quality/page.tsx';
-import Reviews from 'components/reviews/page.tsx';
+import Demo from 'components/demo/page.tsx';
 import Gallery from 'components/gallery/page.tsx';
 import Footer from 'components/footer/page.tsx';
 import Blog from 'components/blog/page.tsx';
@@ -16,7 +15,7 @@ export default function Page() {
             <About />
             <Quality />
             <Gallery />
-            <Reviews />
+            <Demo />
             <Blog />
             <Footer />
         </>
